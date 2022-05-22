@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Fugaz One';
+    src: url(./fonts/Fugaz_One/FugazOne-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+body {
+    background: linear-gradient(90deg, rgba(21,23,64,1) 0%, rgba(38,60,62,1) 50%, rgba(21,23,64,1) 100%);
+}
+
+.header-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.home-tab {
+    text-decoration: underline dotted;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.tab {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tab:hover {
+    opacity: 0.5;
+}
+
+.mobile-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 2.5vw;
+    right: 4vw;
+    display: flex;
+}
+
+@media screen and (max-width: 550px) {
+    .mobile-menu {
+        visibility: visible;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .desktop-menu {
+        visibility: hidden;
+    }
+}
+
+.mobile-jt {
+    color: #ffffff;
+    font-family: 'Fugaz One', cursive;
+    position: fixed;
+    top: 2.5vw;
+    left: 4vw;
+    font-size: 5vw;
+}
+
+.menu-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 0.6vw;
+    padding: 0 .4vw .3vw;
+    font-size: 4vw;
+    transition: all 0.4s ease;
+}
+
+.menu-btn.hide {
+    visibility: hidden;
+}
+
+.menu-btn:focus {
+    opacity: 0.5;
+}
+
+.mobile-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.mobile-overlay.show {
+    overflow: hidden;
+    visibility: visible;
+    animation-name: mobile;
+    animation-duration: 1s;
+}
+
+.close-btn {
+    color: #ffffff;
+    background-color: transparent;
+    position: fixed;
+    top: 2.5vw;
+    right: 4vw;
+    font-size: 6vw;
+    border: none;
+}
+
+@keyframes mobile{
+    from{ top: -50%}
+    to{ transform: translate(-50%, -50%)}
+}
+
+.mobile-tabs {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    list-style: none;
+    text-align: center;
+    visibility: hidden;
+}
+
+.mobile-tabs.show {
+    visibility: visible;
+}
+
+.mobile-link {
+    margin: 6vw;
+    padding: 1vw;
+    background: rgb(72, 61, 139);
+}
+
+.mobile-link:active {
+    opacity: 0.5;
+}
+
+.mobile-text {
+    color: #ffffff;
+    text-decoration: none;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    font-size: 4.8vw;
+}
+
+.home-body {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vw;
+}
+
+@media screen and (max-width: 550px) {
+    .home-body {
+        flex-direction: column-reverse;
+    }
+}
+
+.title {
+    font-weight: 400;
+    width: 18vw;
+    font-size: 3.4vw;
+    color: #ffffff;
+    margin-top: 1.4vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        width: 24vw;
+        font-size: 4.6vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: #ffffff 0.6px;
+        margin: 2vw auto;
+        width: 80vw;
+        text-align: center;
+        font-size: 6vw;
+    }
+}
+
+.jeff-titak {
+    font-weight: 700;
+    width: 32vw;
+    color: #ffffff;
+}
+
+.designer {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: #ffffff 0.6px;
+}
+
+.designer:hover {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #F1B21B;
+}
+
+@media screen and (max-width: 550px) {
+    .designer {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px #F1B21B;
+    }
+}
+
+.developer {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: #ffffff 0.6px;
+}
+
+.developer:hover {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #11DD44;
+}
+
+@media screen and (max-width: 550px) {
+    .developer {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px #11DD44;
+    }
+}
+
+.disc-golf {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: #ffffff 0.6px;
+}
+
+.disc-golf:hover {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #DD11DD;
+}
+
+@media screen and (max-width: 550px) {
+    .disc-golf {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px #DD11DD;
+    }
+}
+
+.portrait-desktop {
+    height: 32vw;
+    display: initial;
+}
+
+@media screen and (max-width: 1000px) {
+    .portrait-desktop {
+        height: 42vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .portrait-desktop {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.portrait-mobile {
+    width: 80vw;
+    visibility: hidden;
+    display: none;
+    margin: 6vw auto 6vw;
+}
+
+@media screen and (max-width: 550px) {
+    .portrait-mobile {
+        visibility: visible;
+        display: initial;
+    }
+}
+
+.home-button {
+    background: linear-gradient(90deg, rgba(193,209,54,1) 0%, rgba(233,241,163,1) 50%, rgba(193,209,54,1) 100%);
+    display: flex;
+    margin: 5vw auto 0;
+    border: 2px rgb(21,23,64) solid;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 550px) {
+    .home-button {
+        margin: 10vw auto 0;
+    }
+}
+.home-button:hover {
+    opacity: 0.75;
+}
+
+.home-button_text {
+    padding: 1.4vw;
+    text-decoration: none;
+    color: rgb(21,23,64);
+    width: 24vw;
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-button_text {
+        padding: 2vw;
+        width: 36vw;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-button_text {
+        padding: 2vw;
+        width: 48vw;
+        font-size: 3.6vw;
+    }
+}

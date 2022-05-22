@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url(./fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(21,23,64,1) 0%, rgba(38,60,62,1) 50%, rgba(21,23,64,1) 100%);
+}
+
+.header-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.tab {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab:hover {
+    opacity: 0.5;
+}
+
+.about-tab {
+    text-decoration: underline dotted;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.about-title {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.wow {
+    font-size: 5vw;
+}
+
+.about-body {
+    display: flex;
+    justify-content: center;
+}
+
+.about-paragraphs {
+    width: 18vw;
+    text-align: center;
+    margin: auto 0;
+}
+
+.paragraph-1 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.paragraph-2 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.about-portrait {
+    margin: auto 5vw;
+    width: 42vw;
+}
+
+.certifications-title {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.75vw;
+}
+
+.certifications-body {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.35vw;
+}
+
+.skills-title {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.75vw;
+}
+
+.resume {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.75vw;
+}
