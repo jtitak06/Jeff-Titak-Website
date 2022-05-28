@@ -1,9 +1,9 @@
-@font-face {
+/*@font-face {
     font-family: 'Fugaz One';
     src: url(./fonts/Fugaz_One/FugazOne-Regular.ttf);
     font-style: normal;
     font-weight: 400;
-}
+}*/
 
 * {
     margin: 0;
@@ -47,6 +47,7 @@ body {
     text-decoration: underline dotted;
     font-weight: 700;
     color: #ffffff;
+    font-size: 1.4vw;
 }
 
 @media screen and (max-width: 1000px) {

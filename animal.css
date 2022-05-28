@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
     src: url(./fonts/Roboto/Roboto-Regular.ttf);
     font-style: normal;
@@ -10,12 +10,13 @@
     src: url(./fonts/Fugaz_One/FugazOne-Regular.ttf);
     font-style: normal;
     font-weight: 400;
-}
+}*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {

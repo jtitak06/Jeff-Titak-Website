@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
     src: url(./fonts/Roboto/Roboto-Regular.ttf);
     font-style: normal;
@@ -17,12 +17,13 @@
     src: url(./fonts/Fugaz_One/FugazOne-Regular.ttf);
     font-style: normal;
     font-weight: 400;
-}
+}*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.4vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -212,6 +214,8 @@ body {
 .wow-desktop {
     font-size: 5vw;
     color: #ffffff;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
 }
 
 .about-body-desktop {
@@ -256,11 +260,26 @@ body {
     margin: 1vw auto;
 }
 
-.certifications-body-desktop {
+.characteristics-body-desktop {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.35vw;
+}
+
+.characteristics-body-desktop-link {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.35vw;
+}
+
+.characteristics-body-desktop-link:hover {
+    opacity: 0.5;
+}
+
+.characteristics-body-desktop-link:active {
+    color: #ffffff;
 }
 
 .skills-title-desktop {
@@ -277,6 +296,18 @@ body {
     font-weight: 700;
     font-size: 1.75vw;
     margin: 1vw auto;
+}
+
+.resume-link {
+    color: #ffffff;
+}
+
+.resume-link:hover {
+    opacity: 0.5;
+}
+
+.resume-link:active {
+    color: #ffffff;
 }
 
 .mobile-body {
@@ -303,6 +334,8 @@ body {
 .wow-mobile {
     font-size: 8vw;
     color: #ffffff;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
 }
 
 .about-portrait-mobile {
@@ -335,8 +368,11 @@ body {
     color: #ffffff;
 }
 
-.paragraph-link:active {
+.paragraph-link:hover {
     opacity: 0.5;
+}
+
+.paragraph-link:active {
     color: #ffffff;
 }
 
@@ -352,11 +388,26 @@ body {
     margin: 1vw auto;
 }
 
-.certifications-body-mobile {
+.characteristics-body-mobile {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 2.8vw;
+}
+
+.characteristics-body-mobile-link {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.8vw;
+}
+
+.characteristics-body-mobile-link:hover {
+    opacity: 0.5;
+}
+
+.characteristics-body-mobile-link:active {
+    color: #ffffff;
 }
 
 .skills-title-mobile {
@@ -372,5 +423,5 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.4vw;
-    margin: 1vw auto;
+    margin: 1vw auto 8vw;
 }

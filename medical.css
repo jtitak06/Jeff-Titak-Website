@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
     src: url(./fonts/Roboto/Roboto-Regular.ttf);
     font-style: normal;
@@ -10,12 +10,13 @@
     src: url(./fonts/Fugaz_One/FugazOne-Regular.ttf);
     font-style: normal;
     font-weight: 400;
-}
+}*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -57,17 +58,14 @@ body {
 @media screen and (max-width: 550px) {
     .desktop-menu {
         visibility: hidden;
-        justify-content: space-between;
         display: none;
     }
 }
 
 .mobile-menu {
     visibility: hidden;
-    position: fixed;
-    top: 2.5vw;
-    right: 4vw;
-    display: flex;
+    justify-content: space-between;
+    display: none;
 }
 
 @media screen and (max-width: 550px) {
